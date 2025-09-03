@@ -1,0 +1,59 @@
+[
+    {
+        "id": 1,
+        "name":" RHYNO SE03",
+        "price": 200,
+        "image": "img/1.png",
+        "description": "Let's Elevate Your Ride Experience With Rhyno– Where Superiority Meets Style.(And the last word will keep changing: Elegance, Minimalism, Comfort)"
+    },
+    {
+        "id": 2,
+        "name":"RHYNO SE03 Lite",
+        "price": 250,
+        "image": "img/2.png",
+        "description": "Let's Elevate Your Ride Experience With Rhyno– Where Superiority Meets Style.(And the last word will keep changing: Elegance, Minimalism, Comfort)"
+    },
+    {
+        "id": 3,
+        "name":" RHYNO SE03Max",
+        "price": 290,
+        "image": "img/3.png",
+        "description": "Let's Elevate Your Ride Experience With Rhyno– Where Superiority Meets Style.(And the last word will keep changing: Elegance, Minimalism, Comfort)"
+    },
+    {
+        "id": 4,
+        "name":"RHYNO SE03",
+        "price": 200,
+        "image": "img/4.png",
+        "description": "Let's Elevate Your Ride Experience With Rhyno– Where Superiority Meets Style.(And the last word will keep changing: Elegance, Minimalism, Comfort)"
+    },
+    {
+        "id": 5,
+        "name":"RHYNO SE03 Lite",
+        "price": 300,
+        "image": "img/5.png",
+        "description": "Let's Elevate Your Ride Experience With Rhyno– Where Superiority Meets Style.(And the last word will keep changing: Elegance, Minimalism, Comfort)"
+    },
+    {
+        "id": 6,
+        "name":"RHYNO SE03 Max",
+        "price": 200,
+        "image": "img/6.png",
+        "description": "Let's Elevate Your Ride Experience With Rhyno– Where Superiority Meets Style.(And the last word will keep changing: Elegance, Minimalism, Comfort)"
+    },
+    {
+        "id": 7,
+        "name":"RHYNO SE03",
+        "price": 200,
+        "image": "img/7.png",
+        "description": "Let's Elevate Your Ride Experience With Rhyno– Where Superiority Meets Style.(And the last word will keep changing: Elegance, Minimalism, Comfort)"
+    },
+    {
+        "id": 8,
+        "name":"RHYNO SE03 Lite",
+        "price": 200,
+        "image": "img/8.png",
+        "description": "Let's Elevate Your Ride Experience With Rhyno– Where Superiority Meets Style.(And the last word will keep changing: Elegance, Minimalism, Comfort)"
+    }
+
+]

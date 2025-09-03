@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 8%;
+}
+
+nav .logo {
+    font-size: 32px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    margin: 0 10px;
+    color: #000;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #f2f2f2;
+}
+
+nav ul li a {
+    display: flex; /* Use flexbox to align items vertically */
+    align-items: center; /* Center items vertically */
+    margin: 0 10px;
+    color: #000;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 10px;
+}
+
+nav ul li a i {
+    font-size: 24px; /* Adjust the font size of the icons */
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 1;
+}
+
+nav ul li ul li {
+    width: 100%;
+}
+
+nav ul li ul li a {
+    padding: 5px;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav ul i {
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.flex-box {
+    display: flex;
+    width: 1000px;
+    margin: 20px auto;
+}
+
+.left {
+    width: 40%;
+}
+
+.big-img {
+    width: 500px;
+    height: 316px;
+    position: relative;
+    left: -153;
+}
+
+.big-img img {
+    width: inherit;
+}
+
+.images {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin-top: 15px;
+}
+
+.small-img {
+    width: 50px;
+    overflow: hidden;
+    border: 1.5px solid black;
+}
+
+.small-img img {
+    width: inherit;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.small-img:hover img {
+    transform: scale(1.2);
+}
+
+.url {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(0, 102, 255);
+}
+
+.pname {
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 50px;
+}
+
+.ratings i {
+    color: rgb(255, 136, 0);
+}
+
+.price {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 20px 0;
+}
+
+.size {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.size p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.psize {
+    width: 60px;
+    height: 30px;
+    border: 1px solid #ff5e00;
+    color: #000;
+    text-align: center;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.psize.active {
+    border-width: 1.5px;
+    color: #ff5e00;
+    font-weight: 500;
+}
+
+.quantity {
+    display: flex;
+}
+
+.quantity p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.quantity input {
+    width: 40px;
+    font-size: 17px;
+    font-weight: 500;
+    text-align: center;
+    margin-left: 15px;
+}
+
+.btn-box {
+    display: flex;
+    margin-top: 40px;
+}
+
+.btn-box button {
+    font-size: 18px;
+    padding: 8px 25px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+}
+
+.cart-btn {
+    background-color: #ff5e00;
+    margin-right: 20px;
+}
+
+.buy-btn {
+    background-color: #00aeff;
+}
+
+.cart-btn:hover {
+    background-color: #ff3c00;
+}
+
+.buy-btn:hover {
+    background-color: #0066ff;
+}
+
+
+
+
+.color {
+    display: flex;
+    margin: 10px 0;
+}
+
+.color .color-option {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.product-details {
+    margin-top: 20px;
+}
+
+.product-details h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.product-details p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  main img {
+    height: 200px;
+    width: auto;
+    margin-bottom: 20px;
+  }
+  
+  main p {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+  
+  main a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  main a:hover {
+    text-decoration: underline;
+  }
+  /* this is footer css */
+  footer{
+	width: 100%;
+	position: absolute;
+	bottom: -519px;
+	background: linear-gradient(to right,#00093c,#2d0b00);
+	color: #fff;
+	padding: 0px 0 30px;
+	border-top-left-radius: 125px;
+	font-size: 13px;
+	line-height: 21px;
+}
+footer .row{
+	width: 85%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+footer .col{
+	flex-basis: 25%;
+	padding: 10px;
+}
+footer .col:nth-child(2),.col:nth-child(3){
+	flex-basis: 15%;
+}
+footer .col h3{
+	width: fit-content;
+	margin-bottom: 40px;
+	position: relative;
+}
+footer .email-id{
+	width: fit-content;
+	border-bottom: 1px solid #ccc;
+	margin: 20px 0;
+}
+footer ul li{
+	list-style: none;
+	margin-bottom: 12px;
+}
+footer ul li a{
+	text-decoration: mone;
+	color: #fff;
+}
+footer form{
+	padding-bottom: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 50px;
+}
+footer form .fa-arrow-right{
+	font-size: 18px;
+	margin-right: 10px;
+}
+footer form input{
+	width: 50%;
+	background: transparent;
+	color: #ccc;
+	border: 0;
+	outline: none;
+}
+footer form button{
+	background: transparent;
+	border: 0;
+	outline: none;
+	cursor: pointer;
+}
+footer form button .fa-arrow-right{
+	font-size: 16px;
+	color: #ccc;
+}
+footer .social-icons .fa-brands{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 40px;
+	font-size: 20px;
+	color: #000;
+	background: #fff;
+	margin-right: 15px;
+	cursor: pointer;
+}
+footer hr{
+	width: 90%;
+	border: 0;
+	border-bottom: 1px solid #ccc;
+	margin: 20px auto;
+}
+footer .copyright{
+	text-align: center;
+}
+footer .underline{
+	width: 100%;
+	height: 5px;
+	background: #767676;
+	border-radius: 3px;
+	position: absolute;
+	top: 43px;
+	left: 0;
+	overflow: hidden;
+}
+footer .underline span{
+	width: 15px;
+	height: 100%;
+	background:#fff;
+	border-radius: 3px;
+	position: absolute;
+	top: 0;
+	left: 10px;
+	animation: moving 2s linear infinite;
+}
+@keyframes moving {
+	0%{
+		left: -20px;
+	}
+	100%{
+		left: 100%;
+	}
+	
+}
+@media (max-width: 700px){
+	footer{
+		bottom: unset;
+	}
+	.col{
+		flex-basis: 100%;
+	}
+	.col:nth-child(2),.col:nth-child(3){
+		flex-basis: 100%;
+	}
+}
+footer .col logonotitle{
+	height: 100px;
+	width: 100px;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">RHYNO-EV</div>
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Aboutus.html">About us</a></li>
+          <li><a href="detailpage-main/detail.html">Products <i class="fas fa-caret-down"></i></a>
+              <ul id="cars">
+                  <li><a href="SE03Lite.html">SE03 Lite</a></li>
+                  <li><a href="SE03.html">SE03</a></li>
+                  <li><a href="SE03Max.html">SE03 Max</a></li>
+                  <li><a href="javascript-product-comparison-page-main/index.html">CompareAll</a></li>
+              </ul>
+          </li>
+          <li><a href="Contactus.html">Contact us</a></li>
+          <li><a href="payment gateway/index.html">Pre-book now</a></li>
+          <li><a href="https://www.instagram.com/rhyno.in?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://www.linkedin.com/company/rhyno-wheels/"><i class="fab fa-linkedin"></i></a></li>
+          <i class="fas fa-shopping-cart"></i>
+      </ul>
+  </nav>
+      
+  </header>
+  <main>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3962.6078527204704!2d72.66303179142113!3d23.158936906303868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s%20Rhyno%20Wheels%20Private%20limited%2C%20Near%20UG%20hostel%20gate%20%232%2C%20Behind%20PDEU%2C%20%20Raisan%2C%20Gandhinagar%2C%20Gujarat%2C%20India!5e0!3m2!1sen!2sin!4v1713685544132!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"> width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <p>Email: <a href="mailto: info@rhyno.in"> info@rhyno.in</a></p>
+    <p>Phone: <a href="tel:+91-9023987528">+91-9023987528</a></p>
+    <p>Address:  Rhyno Wheels Private limited, Near UG hostel gate #2, Behind PDEU,
+        Raisan, Gandhinagar, Gujarat, India</p>
+  </main>
+  <footer>
+    <!-- Footer content here -->
+        <div class="row">
+          <div class="col">
+            <!-- <img src="Images/logonotitle.png" alt="img"> -->
+          </div>
+          <div class="col">
+            <h3>Rhyno Wheels Private limited<div class="underline"><span></span></div></h3>
+            <p>Gandhinagar</p>
+            <p>Gujarat</p>
+            <p>India</p>
+            <p class="email-id">info@rhyno.in</p>
+            <h4>+91 -9023987528 </h4>
+          </div>
+          <div class="col">
+            <h3>links<div class="underline"><span></span></div></h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="comparison.html">Compare All</a></li>
+              <li><a href="Aboutus.html">About us</a></li>
+              <li><a href="productpage.html">Products</a></li>
+              <li><a href="Contactus.html">Contact us</a></li>
+      
+            </ul>
+          </div>
+          <div class="col">
+            <h3>NewsLetter<div class="underline"><span></span></div></h3>
+            <form action="">
+              <i class="fa-solid fa-envelope" style="color: #fff;"></i>
+              <input type="email" placeholder="Enter your email-id" required>
+              <button type="submit"><i class="fa-solid fa-arrow-right" style="color: #fff;"></i></button>
+            </form>
+            <div class="social-icons">
+              <i class="fa-brands fa-facebook"><a href="SE03.html"></a></i>
+              <i class="fa-brands fa-square-x-twitter"></i> 
+              <i class="fa-brands fa-linkedin"></i>
+               <i class="fa-brands fa-youtube"></i>
+            </div>
+          </div>
+      
+        </div>
+        <hr>
+        <p class="copyright">RHYNO EV &#169 2024 -All Rights Reserved</p>
+      </footer>
+</body>
+</html>

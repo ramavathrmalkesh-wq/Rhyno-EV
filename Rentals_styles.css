@@ -1,0 +1,179 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F2F2F2;
+    color: #373737;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #252525;
+    color: #FFFFFF;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #F9ED32;
+}
+
+.main {
+    padding: 20px;
+}
+
+.rental-options {
+    background-color: #EDEDED;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.download-app {
+    background-color: #FAFAFA;
+    padding: 20px;
+}
+
+.app-buttons a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #F9ED32;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.app-buttons a:hover {
+    background-color: #FFF225;
+}
+
+.app-buttons a img {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+footer {
+    background-color: #131313;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+footer ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #F9ED32;
+}
+.icons{
+    position: fixed; 
+    top: 30%;
+    right: 0%;
+    width: 200px;
+    display: flex;
+   
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 999; 
+  }
+    .icons a{
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 10px;
+      font-size: 20px;
+      font-family: 'Oswald',sans-serif;
+      margin: 2px;
+      text-align: left;
+      border-radius: 50px 0px 0px 50px;
+      transform: translate(130px,0px);
+      transition: all 0.5s;
+      cursor: pointer;
+    }
+    .icons a:hover 
+    {
+      transform: translate(0px,0px);
+    }
+    .icons a i{
+      margin-right: 25px;
+      background-color: white;
+      height: 40px;
+      width: 40px;
+      color: black;
+      text-align: center;
+      line-height: 40px;
+      border-radius: 50%;
+      transition: all 0.5s;
+      cursor: pointer;
+    }
+    .icons .fa-motorcycle{
+      color: black;
+    }
+    .icons .fa-facebook{
+      color: #2c80d3;
+    }
+    .icons .fa-youtube{
+      color: #fa0910;
+    }
+    .icons .fa-linkedin{
+      color: #0077B5;
+    }
+    .icons .fa-square-x-twitter{
+      color: black;
+    }
+    .icons a:hover i{
+    transform: rotate(20deg);
+    }
+    .facebook{
+      background-color: #2c80d3;
+      color:white;
+    }
+    .Prebook{
+      background-color: yellow;
+      color:black;
+    }
+    .youtube{
+      background-color: #fa0910;
+      color:white;
+    }
+    .Twitter{
+      background-color: #53c5ff;
+      color:white;
+    }
+    .Linkedin{
+      background-color: #0077B5;
+      color:white;
+    }

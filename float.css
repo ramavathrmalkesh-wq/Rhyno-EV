@@ -1,0 +1,78 @@
+.icons{
+  position: fixed; 
+  top: 30%;
+  right: 0%;
+  width: 200px;
+  display: flex;
+ 
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 999; 
+}
+  .icons a{
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Oswald',sans-serif;
+    margin: 2px;
+    text-align: left;
+    border-radius: 50px 0px 0px 50px;
+    transform: translate(130px,0px);
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  .icons a:hover 
+  {
+    transform: translate(0px,0px);
+  }
+  .icons a i{
+    margin-right: 25px;
+    background-color: white;
+    height: 40px;
+    width: 40px;
+    color: black;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  .icons .fa-motorcycle{
+    color: black;
+  }
+  .icons .fa-facebook{
+    color: #2c80d3;
+  }
+  .icons .fa-youtube{
+    color: #fa0910;
+  }
+  .icons .fa-linkedin{
+    color: #0077B5;
+  }
+  .icons .fa-square-x-twitter{
+    color: black;
+  }
+  .icons a:hover i{
+  transform: rotate(20deg);
+  }
+  .facebook{
+    background-color: #2c80d3;
+    color:white;
+  }
+  .Prebook{
+    background-color: yellow;
+    color:black;
+  }
+  .youtube{
+    background-color: #fa0910;
+    color:white;
+  }
+  .Twitter{
+    background-color: #53c5ff;
+    color:white;
+  }
+  .Linkedin{
+    background-color: #0077B5;
+    color:white;
+  }

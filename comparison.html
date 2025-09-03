@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <title>comparison table</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        td>img {
+            width: 100%;
+            height: 250px;
+            object-fit: contain;
+        }
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 8%;
+    background-color: darkgray;
+}
+
+nav .logo {
+    font-size: 32px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    margin: 0 10px;
+    color: #000;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #f2f2f2;
+}
+
+nav ul li a {
+    display: flex; /* Use flexbox to align items vertically */
+    align-items: center; /* Center items vertically */
+    margin: 0 10px;
+    color: #000;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 10px;
+}
+
+nav ul li a i {
+    font-size: 24px; /* Adjust the font size of the icons */
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 1;
+}
+
+nav ul li ul li {
+    width: 100%;
+}
+
+nav ul li ul li a {
+    padding: 5px;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav ul i {
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">RHYNO-EV</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Aboutus.html">About us</a></li>
+            <li><a href="productpage.html">Products <i class="fas fa-caret-down"></i></a>
+                <ul id="cars">
+                    <li><a href="SE03Lite.html">SE03 Lite</a></li>
+                    <li><a href="SE03.html">SE03</a></li>
+                    <li><a href="SE03Max.html">SE03 Max</a></li>
+                    <li><a href="comparison.html">CompareAll</a></li>
+                </ul>
+            </li>
+            <li><a href="Contactus.html">Contact us</a></li>
+            <li><a href="Prebook.html">Pre-book now</a></li>
+            <li><a href="https://www.instagram.com/rhyno.in?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/company/rhyno-wheels/"><i class="fab fa-linkedin"></i></a></li>
+            <i class="fas fa-shopping-cart"></i>
+        </ul>
+    </nav>
+    <h1 class="display-5 my-5 text-center">Compare All</h1>
+    <div class="container">
+        <div class="col-md-9 mx-auto">
+            <table class="table">
+                <tr class="bg-light">
+                    <th>Select Product</th>
+                    <th width="300px">
+                        <select class="form-control" id="select1" onchange="item1(this.value)">
+                            <option value="0">-- Select Anyone --</option>
+                        </select>
+                    </th>
+                    <th width="300px">
+                        <select class="form-control" id="select2" onchange="item2(this.value)">
+                            <option value="0">-- Select Anyone --</option>
+                        </select>
+                    </th>
+                </tr>
+                <tr>
+                    <th>Product Image</th>
+                    <td>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1665px-No-Image-Placeholder.svg.png"
+                            id="img1" alt=" ">
+                    </td>
+                    <td>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1665px-No-Image-Placeholder.svg.png"
+                            id="img2" alt=" ">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Title</th>
+                    <td id="title1">N/A</td>
+                    <td id="title2">N/A</td>
+                </tr>
+                <tr>
+                    <th>Battery</th>
+                    <td id="Battery1">N/A</td>
+                    <td id="Battery2">N/A</td>
+                </tr>
+                <tr>
+                    <th>Battery features</th>
+                    <td id="Batteryfeatures1">N/A</td>
+                    <td id="Batteryfeatures2">N/A</td>
+                </tr>
+                <tr>
+                    <th>Battery warranty</th>
+                    <td id="warranty1">N/A</td>
+                    <td id="warranty2">N/A</td>
+                </tr>
+                <tr>
+                    <th>charging time</th>
+                    <td id="charging1">N/A</td>
+                    <td id="charging2">N/A</td>
+                </tr>
+                <tr>
+                    <th>Motor</th>
+                    <td id="Motor1">N/A</td>
+                    <td id="Motor2">N/A</td>
+                </tr>
+                <tr>
+                    <th>Max speed</th>
+                    <td id="speed1">N/A</td>
+                    <td id="speed2">N/A</td>
+                </tr>
+                <tr>
+                    <th>Warranty on electronics</th>
+                    <td id="warrantyonelectronics1">N/A</td>
+                    <td id="warrantyonelectronics2">N/A</td>
+                </tr>
+                <tr>
+                    <th>Max range(@30km/h)</th>
+                    <td id="Maxrange1">N/A</td>
+                    <td id="Maxrange2">N/A</td>
+                </tr>
+                <tr>
+                    <th>Max range(@45km/h)</th>
+                    <td id="maxrange45">N/A</td>
+                    <td id="maxrange46">N/A</td>
+                </tr>
+                <tr>
+                    <th>Max range(@full speed)</th>
+                    <td id="maxrangefullspeed1">N/A</td>
+                    <td id="maxrangefullspeed2">N/A</td>
+                </tr>
+                <tr>
+                    <th>Other key benefits</th>
+                    <td id="key1">N/A</td>
+                    <td id="key2">N/A</td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js "></script>
+</body>
+
+</html>
+
+<script src="src/data.js"></script>
+<script src="comparison.js"></script>

@@ -1,0 +1,228 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SE03Max</title>
+    <link rel="stylesheet" href="SE03.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+        }
+        .container {
+          width: 100%;
+          margin: 0 auto;
+        }
+        table {
+          width: 100%;
+          border-collapse: collapse;
+          margin-bottom: 20px;
+          display: none;
+        }
+        th, td {
+          padding: 12px 15px;
+          text-align: left;
+        }
+        th {
+          background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+          background-color: #f9f9f9;
+        }
+        .quantity {
+          margin-bottom: 20px;
+        }
+        .product-details {
+          display: none;
+          margin-top: 20px;
+        }
+        .btn-box {
+          margin-top: 20px;
+        }
+        .view-more-btn {
+          background-color: #f0c14b;
+          color: #111;
+          border: none;
+          padding: 10px 20px;
+          font-size: 16px;
+          cursor: pointer;
+          border-radius: 4px;
+          transition: background-color 0.3s ease;
+        }
+        .view-more-btn:hover {
+          background-color: #ddb347;
+        }
+      </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">RHYNO-EV</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Aboutus.html">About us</a></li>
+            <li><a href="productpage.html">Products <i class="fas fa-caret-down"></i></a>
+                <ul id="cars">
+                    <li><a href="SE03Lite.html">SE03 Lite</a></li>
+                    <li><a href="SE03.html">SE03</a></li>
+                    <li><a href="SE03Max.html">SE03 Max</a></li>
+                    <li><a href="comparison.html">CompareAll</a></li>
+                </ul>
+            </li>
+            <li><a href="Contactus.html">Contact us</a></li>
+            <li><a href="payment gateway/index.html">Pre-book now</a></li>
+            <li><a href="https://www.instagram.com/rhyno.in?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/company/rhyno-wheels/"><i class="fab fa-linkedin"></i></a></li>
+            <i class="fas fa-shopping-cart"></i>
+        </ul>
+    </nav>
+
+    <div class="flex-box">
+        <div class="left">
+            <div class="big-img">
+                <img src="vehicleimages/vehicle1.png">
+            </div>
+            <div class="images">
+                <div class="small-img">
+                    <img src="vehicleimages/vehicle2.png" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="vehicleimages/vehicle3.png" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="vehicleimages/vehicle4.png" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="vehicleimages/vehicle5.png" onclick="showImg(this.src)">
+                </div>
+            </div>
+        </div>
+<div class="right">
+    <div class="url">Home > Product > SE03 Lite</div>
+    <div class="pname">SE03 Lite</div>
+    <div class="ratings">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+    </div>
+    <div class="price">$40</div>
+    <div class="color">
+        <span class="color-option" style="background: #000;" onclick="changeColor('#000')"></span>
+        <span class="color-option" style="background: #EDEDED;" onclick="changeColor('#EDEDED')"></span>
+        <span class="color-option" style="background: #D5D6D8;" onclick="changeColor('#D5D6D8')"></span>
+        <span class="color-option" style="background: #EFE0DE;" onclick="changeColor('#EFE0DE')"></span>
+        <span class="color-option" style="background: #AB8ED1;" onclick="changeColor('#AB8ED1')"></span>
+        <span class="color-option" style="background: #F04D44;" onclick="changeColor('#F04D44')"></span>
+    </div>
+    <div class="container">
+            <div class="quantity">
+                <p>Quantity :</p>
+                <input type="number" min="1" max="5" value="1">
+            </div><br>
+            <div class="btn-box">
+                <button class="cart-btn">Add to Cart</button>
+                <button class="buy-btn"><a href="payment gateway/index.html">Buynow</a></button>
+            </div>
+                <br>><hr>              
+                <button class="view-more-btn" onclick="toggleDetails()">View More</button>
+                <div class="product-details">
+                    <h3>Product Details</h3>
+                    <p> This Rhyno is tuned for long drives and no thrills. Like all other variants, this machine comes with a fire-safe advanced LFP battery and all the other benefits of owning a Rhyno, along with a perfect blend of battery capacity and motor power to provide up to 150 km range on a single charge. While it may not provide a thrilling ride, it promises a dependable and unwavering presence on the long stretches. 
+                    </p>
+                  </div>
+                <table id="spec-table">
+                  <tr>
+                    <th>Specification</th>
+                    <th>Rhyno SE03 Max</th>
+                  </tr>
+                  <tr>
+                    <td>Battery</td>
+                    <td>2.7Kwh</td>
+                  </tr>
+                  <tr>
+                    <td>Battery features</td>
+                    <td>
+                      LFP with 1500 cycles<br>
+                      Active Balancing<br>
+                      Waterproof (IP67)
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Battery warranty</td>
+                    <td>3 years</td>
+                  </tr>
+                  <tr>
+                    <td>Charging time</td>
+                    <td>4 hours (12A)</td>
+                  </tr>
+                  <tr>
+                    <td>Motor</td>
+                    <td>2000W</td>
+                  </tr>
+                  <tr>
+                    <td>Max speed</td>
+                    <td>65 km/h</td>
+                  </tr>
+                  <tr>
+                    <td>Warranty on electronics</td>
+                    <td>1 year</td>
+                  </tr>
+                  <tr>
+                    <td>Max range (@30km/h)</td>
+                    <td>120 km</td>
+                  </tr>
+                  <tr>
+                    <td>Max range (@45km/h)</td>
+                    <td>100 km</td>
+                  </tr>
+                  <tr>
+                    <td>Max range (@full speed)</td>
+                    <td>80 km</td>
+                  </tr>
+                  <tr>
+                    <td>Other key benefits</td>
+                    <td>
+                      Fire-safe Battery<br>
+                      Range prediction<br>
+                      Comfortable ride<br>
+                      Stable and safe
+                    </td>
+                  </tr>
+                </table>
+              </div>
+    </div>
+    <script>
+        function toggleDetails() {
+          var table = document.getElementById('spec-table');
+          var details = document.querySelector('.product-details');
+          var btn = document.querySelector('.view-more-btn');
+          if (table.style.display === "none") {
+            table.style.display = "table";
+            details.style.display = "block";
+            btn.textContent = "View Less";
+          } else {
+            table.style.display = "none";
+            details.style.display = "none";
+            btn.textContent = "View More";
+          }
+        }
+      </script>
+      
+<script>
+    function changeColor(color) {
+        document.querySelector('.big-img img').style.borderColor = color;
+    }
+    </script>   
+    </script>    
+    <script>
+        let bigImg = document.querySelector('.big-img img');
+        function showImg(pic){
+            bigImg.src = pic;
+        }
+    </script>
+</body>
+</html>
